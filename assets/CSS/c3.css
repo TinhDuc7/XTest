@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 80px auto;
+}
+/*********************************** Header */
+header {
+    width: 1013px;
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.userItem {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Merriweather';
+    width: 91px;
+    height: 40px;
+    line-height: 40px;
+}
+.searchItem {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 327px;
+    height: 64px;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+}
+
+img.searchIcon {
+    width: 32px;
+    height: 32px;
+}
+
+input#searchInp {
+    height: 32px;
+    width: 300px;
+    border: none;
+}
+
+
+.rightItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.itemBar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemBars {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+/*     display: flex;
+    align-self: flex-end; */
+    width: 115px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* top: 15px; */
+    border-radius: 8px;
+
+}
+
+.itemBars:hover {
+    background: #849FFF;
+    border-radius: 8px;
+    color: white;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+}
+
+
+/*************** Main */
+ul {
+    list-style-type: none;
+}
+.users__list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.users {
+    width: 329px;
+    height: 209px;
+    background: #FBFCFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 16px;
+}
+
+.info__users {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 26px;
+    align-items: flex-start;
+}
+
+.name--user {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.adress--users {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+li {
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    padding: 2px 8px;
+    background: white;
+}
+
+ul.favorite--users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.info__users.info--user1 {
+    margin-right: 36px;
+}
+
+.users:hover {
+    box-shadow: 0px 8px 23px rgb(218 224 249 / 70%);
+    border: 1px solid #BFC8E6;
+    cursor: pointer;
+}
