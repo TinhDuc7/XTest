@@ -27,6 +27,7 @@ header {
     width: 91px;
     height: 40px;
     line-height: 40px;
+    text-shadow: 0px 7px 15px rgb(0 0 0 / 46%), 1px 6px 5px rgb(0 0 0 / 5%), -23px 9px 17px rgb(0 0 0 / 5%);
 }
 .searchItem {
     display: flex;
@@ -85,7 +86,7 @@ input#searchInp {
     background: #849FFF;
     border-radius: 8px;
     color: white;
-    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 23%) 0px 15px 13px, rgb(0 0 0 / 55%) 0px 8px 4px;
 }
 
 .searchIcon:hover {
@@ -156,4 +157,69 @@ ul.favorite--users {
     box-shadow: 0px 8px 23px rgb(218 224 249 / 70%);
     border: 1px solid #BFC8E6;
     cursor: pointer;
+}
+
+/***************** Media */
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    header {
+        width: 100%;
+    }
+    .searchItem {
+        width: 40%;
+    }
+    .itemBar-right {
+        width: 55%;
+    }
+    .itemBars {
+        width: 35%;
+        font-size: 16px;
+    }
+
+    .users__list {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    header {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rightItem {
+        gap: 10px;
+        align-items: center;
+          flex-direction: column;
+    }
+    .searchItem {
+        width: 100%;
+        padding: 10px;
+        height: 5vh;
+    }
+    .itemBar-right {
+        width: 90%;
+    }
+
+    .itemBars {
+        width: 20%;
+        font-size: 12px;
+    }
+
+    .users__list {
+        justify-content: center;
+    }
 }
